@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
-                                Toast.makeText (getApplicationContext(), " 성고옹", Toast.LENGTH_SHORT).show();
+                                Toast.makeText (getApplicationContext(), " Device Token transferred", Toast.LENGTH_SHORT).show();
                             }
                         }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText (getApplicationContext(), "실패에", Toast.LENGTH_SHORT).show();
+                        Toast.makeText (getApplicationContext(), " Device Token not transferred", Toast.LENGTH_SHORT).show();
 
                     }
                 })
