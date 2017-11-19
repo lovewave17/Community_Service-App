@@ -2,6 +2,7 @@ package com.example.hansei.pushapp;
 
 import android.content.SharedPreferences;
 import android.nfc.Tag;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,7 +32,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import java.net.URLEncoder;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends FragmentActivity {
     Button button;
     private WebView mWebView; //웹뷰
     private WebSettings mWebSettings; //웹뷰세팅
@@ -82,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
         mWebSettings.setSupportZoom(true);
         mWebSettings.setBuiltInZoomControls(true);// 줌컨트롤 제약
         mWebSettings.setDisplayZoomControls(false);
+        mWebSettings.setLoadWithOverviewMode(true);
+        mWebSettings.setUseWideViewPort(true);
 
         mWebView.loadUrl("http://mahndoi.dothome.co.kr/Service_Intro_Page2.html");
 
