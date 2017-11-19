@@ -37,7 +37,7 @@ public class MainActivity extends FragmentActivity {
     private WebView mWebView; //웹뷰
     private WebSettings mWebSettings; //웹뷰세팅
     //    private static final String TAG = "MainActivity";
-    String app_server_url = "http://192.168.2.129/token.php";
+    String app_server_url = "http://220.68.231.96/token.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
