@@ -83,8 +83,6 @@ public class MainActivity extends FragmentActivity {
         mWebSettings.setSupportZoom(true);
         mWebSettings.setBuiltInZoomControls(true);// 줌컨트롤 제약
         mWebSettings.setDisplayZoomControls(false);
-        mWebSettings.setLoadWithOverviewMode(true);
-        mWebSettings.setUseWideViewPort(true);
 
         mWebView.loadUrl("http://mahndoi.dothome.co.kr/Service_Intro_Page2.html");
 
